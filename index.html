@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PN Engineering Works – Leading Manufacturer of Sewing Machine Parts</title>
+<meta name="description" content="PN Engineering Works, India – Global manufacturer and exporter of precision sewing machine parts including needles, bobbins, hooks, motors, and accessories. Trusted by buyers in 50+ countries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0a1628;
+  --blue: #1a4fa0;
+  --blue-mid: #2563be;
+  --blue-light: #3b82f6;
+  --steel: #64748b;
+  --silver: #94a3b8;
+  --ice: #e2e8f0;
+  --white: #ffffff;
+  --bg: #f8fafc;
+  --accent: #f59e0b;
+  --accent-red: #e11d48;
+  --green: #16a34a;
+  --whatsapp: #25d366;
+  --gradient-hero: linear-gradient(135deg, #0a1628 0%, #1a3a6e 60%, #1a4fa0 100%);
+  --shadow-card: 0 4px 24px rgba(10,22,40,0.10);
+  --shadow-hover: 0 12px 40px rgba(26,79,160,0.18);
+  --radius: 10px;
+  --radius-lg: 16px;
+  --transition: all 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Barlow', sans-serif; background: var(--bg); color: var(--navy); line-height: 1.6; overflow-x: hidden; }
+
+/* ─── UTILITY ─── */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 6px; font-family: 'Barlow', sans-serif; font-weight: 600; font-size: 0.95rem; cursor: pointer; border: none; transition: var(--transition); text-decoration: none; letter-spacing: 0.02em; }
+.btn-primary { background: var(--blue); color: #fff; }
+.btn-primary:hover { background: var(--blue-mid); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,79,160,0.35); }
+.btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.7); }
+.btn-outline:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+.btn-accent { background: var(--accent); color: var(--navy); }
+.btn-accent:hover { background: #d97706; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245,158,11,0.35); }
+.btn-whatsapp { background: var(--whatsapp); color: #fff; }
+.btn-whatsapp:hover { background: #1ebe5d; transform: translateY(-2px); }
+.btn-sm { padding: 8px 18px; font-size: 0.875rem; }
+.section-label { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--blue-light); margin-bottom: 10px; display: block; }
+.section-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.05; color: var(--navy); }
+.section-title span { color: var(--blue); }
+.section-sub { color: var(--steel); font-size: 1.05rem; margin-top: 14px; max-width: 600px; }
+.tag { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; }
+.tag-blue { background: #dbeafe; color: var(--blue); }
+.tag-green { background: #dcfce7; color: #166534; }
+.tag-amber { background: #fef3c7; color: #92400e; }
+.hidden { display: none !important; }
+
+/* ─── ANNOUNCEMENT BAR ─── */
+.announce-bar { background: var(--navy); color: var(--silver); font-size: 0.82rem; padding: 7px 0; text-align: center; letter-spacing: 0.04em; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.announce-bar strong { color: var(--accent); }
+
+/* ─── TOP NAV ─── */
+#navbar { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 2px 20px rgba(10,22,40,0.08); }
+.nav-main { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; max-width: 1280px; margin: 0 auto; }
+.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.nav-logo .logo-mark { width: 44px; height: 44px; background: var(--gradient-hero); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.nav-logo .logo-mark svg { width: 26px; height: 26px; fill: #fff; }
+.nav-logo .logo-text { display: flex; flex-direction: column; }
+.nav-logo .brand-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.3rem; color: var(--navy); line-height: 1; letter-spacing: 0.03em; }
+.nav-logo .brand-tag { font-size: 0.7rem; color: var(--steel); letter-spacing: 0.05em; text-transform: uppercase; margin-top: 2px; }
+.nav-links { display: flex; align-items: center; gap: 4px; }
+.nav-links a { font-weight: 500; font-size: 0.9rem; color: var(--steel); text-decoration: none; padding: 8px 14px; border-radius: 6px; transition: var(--transition); }
+.nav-links a:hover, .nav-links a.active { color: var(--blue); background: #eff6ff; }
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: var(--transition); }
+
+/* Category bar */
+.cat-bar { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.06); }
+.cat-bar-inner { max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+.cat-bar-inner::-webkit-scrollbar { display: none; }
+.cat-btn { display: flex; align-items: center; gap: 7px; padding: 11px 18px; color: rgba(255,255,255,0.7); font-size: 0.875rem; font-weight: 500; white-space: nowrap; cursor: pointer; border: none; background: none; transition: var(--transition); position: relative; font-family: 'Barlow', sans-serif; letter-spacing: 0.02em; }
+.cat-btn::after { content: ''; position: absolute; bottom: 0; left: 18px; right: 18px; height: 2px; background: var(--accent); transform: scaleX(0); transition: var(--transition); }
+.cat-btn:hover, .cat-btn.active { color: #fff; }
+.cat-btn:hover::after, .cat-btn.active::after { transform: scaleX(1); }
+.cat-icon { font-size: 1rem; }
+
+/* ─── MOBILE MENU ─── */
+#mobile-menu { display: none; position: fixed; inset: 0; background: var(--navy); z-index: 2000; padding: 24px; flex-direction: column; gap: 12px; overflow-y: auto; }
+#mobile-menu.open { display: flex; }
+#mobile-menu a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 1.1rem; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.08); font-weight: 500; }
+.mobile-close { align-self: flex-end; background: none; border: none; color: #fff; font-size: 1.8rem; cursor: pointer; margin-bottom: 12px; }
+
+/* ─── HERO ─── */
+#hero { background: var(--gradient-hero); min-height: 88vh; display: flex; align-items: center; position: relative; overflow: hidden; }
+.hero-grid-bg { position: absolute; inset: 0; opacity: 0.04; background-image: linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px); background-size: 48px 48px; }
+.hero-glow { position: absolute; top: -200px; right: -200px; width: 700px; height: 700px; background: radial-gradient(circle, rgba(59,130,246,0.22) 0%, transparent 70%); pointer-events: none; }
+.hero-content { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding: 80px 0; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 40px; padding: 6px 16px; color: rgba(255,255,255,0.85); font-size: 0.82rem; font-weight: 500; letter-spacing: 0.04em; margin-bottom: 22px; }
+.hero-badge span { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; animation: pulse 1.8s infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+.hero-headline { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: clamp(2.8rem, 5.5vw, 4.5rem); color: #fff; line-height: 1.0; letter-spacing: -0.01em; margin-bottom: 20px; }
+.hero-headline em { color: var(--accent); font-style: normal; }
+.hero-sub { color: rgba(255,255,255,0.72); font-size: 1.1rem; line-height: 1.7; margin-bottom: 36px; max-width: 520px; }
+.hero-btns { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 48px; }
+.hero-stats { display: flex; gap: 36px; flex-wrap: wrap; }
+.hero-stat { }
+.hero-stat .num { font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 900; color: #fff; line-height: 1; }
+.hero-stat .lbl { font-size: 0.78rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }
+.hero-visual { position: relative; }
+.hero-img-main { width: 100%; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.5); aspect-ratio: 4/3; background: linear-gradient(135deg,#1e3a5f,#2563be); display: flex; align-items: center; justify-content: center; }
+.hero-img-main img { width: 100%; height: 100%; object-fit: cover; }
+.hero-img-main .img-placeholder { display: flex; flex-direction: column; align-items: center; gap: 12px; color: rgba(255,255,255,0.4); }
+.hero-img-main .img-placeholder svg { width: 60px; height: 60px; }
+.hero-img-main .img-placeholder span { font-size: 0.85rem; }
+.hero-badge-float { position: absolute; bottom: -20px; left: -20px; background: #fff; border-radius: 12px; padding: 14px 20px; box-shadow: 0 8px 32px rgba(10,22,40,0.25); display: flex; align-items: center; gap: 12px; }
+.hero-badge-float .icon { width: 40px; height: 40px; background: #dbeafe; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.hero-badge-float .icon svg { width: 22px; height: 22px; fill: var(--blue); }
+.hero-badge-float .info .title { font-weight: 700; font-size: 0.9rem; color: var(--navy); }
+.hero-badge-float .info .sub { font-size: 0.75rem; color: var(--steel); }
+.hero-badge-float2 { position: absolute; top: -16px; right: -16px; background: var(--accent); border-radius: 12px; padding: 12px 18px; box-shadow: 0 8px 24px rgba(245,158,11,0.4); }
+.hero-badge-float2 .num { font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; font-weight: 900; color: var(--navy); line-height: 1; }
+.hero-badge-float2 .lbl { font-size: 0.7rem; color: rgba(10,22,40,0.7); text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* ─── TRUST STRIP ─── */
+.trust-strip { background: #fff; border-bottom: 1px solid var(--ice); padding: 24px 0; }
+.trust-inner { display: flex; gap: 0; flex-wrap: wrap; justify-content: center; }
+.trust-item { display: flex; align-items: center; gap: 12px; padding: 12px 32px; border-right: 1px solid var(--ice); }
+.trust-item:last-child { border-right: none; }
+.trust-item svg { width: 28px; height: 28px; flex-shrink: 0; }
+.trust-item .t-text .t-title { font-weight: 700; font-size: 0.9rem; color: var(--navy); }
+.trust-item .t-text .t-sub { font-size: 0.78rem; color: var(--steel); }
+
+/* ─── SECTIONS ─── */
+section { padding: 80px 0; }
+.section-head { margin-bottom: 50px; }
+.section-head.center { text-align: center; }
+.section-head.center .section-sub { margin: 14px auto 0; }
+
+/* ─── PRODUCTS ─── */
+#products { background: var(--bg); }
+.filter-bar { background: #fff; border: 1px solid var(--ice); border-radius: var(--radius); padding: 20px 24px; margin-bottom: 36px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+.filter-bar label { font-size: 0.8rem; font-weight: 700; color: var(--steel); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; display: block; }
+.filter-bar select { padding: 9px 14px; border: 1.5px solid var(--ice); border-radius: 6px; font-family: 'Barlow', sans-serif; font-size: 0.875rem; color: var(--navy); background: #fff; cursor: pointer; min-width: 150px; }
+.filter-bar select:focus { outline: none; border-color: var(--blue); }
+.filter-group { display: flex; flex-direction: column; }
+.results-count { margin-left: auto; color: var(--steel); font-size: 0.875rem; align-self: flex-end; }
+
+.products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+.product-card { background: #fff; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-card); transition: var(--transition); cursor: pointer; border: 1px solid var(--ice); }
+.product-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: #bfdbfe; }
+.product-card:hover .card-img img { transform: scale(1.06); }
+.card-img { aspect-ratio: 4/3; overflow: hidden; background: linear-gradient(135deg,#eff6ff,#dbeafe); position: relative; }
+.card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.card-img .img-ph { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+.card-img .img-ph svg { width: 56px; height: 56px; fill: #93c5fd; }
+.card-badge { position: absolute; top: 12px; left: 12px; }
+.card-body { padding: 18px 20px; }
+.card-cat { font-size: 0.75rem; font-weight: 600; color: var(--blue-light); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 6px; }
+.card-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--navy); margin-bottom: 6px; line-height: 1.2; }
+.card-desc { font-size: 0.85rem; color: var(--steel); line-height: 1.5; margin-bottom: 14px; }
+.card-moq { font-size: 0.78rem; color: var(--steel); margin-bottom: 14px; display: flex; align-items: center; gap: 5px; }
+.card-moq svg { width: 14px; height: 14px; fill: var(--silver); }
+.card-actions { display: flex; gap: 8px; }
+.card-actions .btn { flex: 1; justify-content: center; }
+
+/* ─── PRODUCT MODAL ─── */
+#product-modal { display: none; position: fixed; inset: 0; z-index: 3000; background: rgba(10,22,40,0.75); backdrop-filter: blur(4px); padding: 24px; overflow-y: auto; }
+#product-modal.open { display: flex; align-items: flex-start; justify-content: center; }
+.modal-inner { background: #fff; border-radius: var(--radius-lg); max-width: 960px; width: 100%; margin: auto; overflow: hidden; position: relative; }
+.modal-close { position: absolute; top: 16px; right: 16px; width: 36px; height: 36px; background: var(--ice); border: none; border-radius: 50%; cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; z-index: 10; transition: var(--transition); }
+.modal-close:hover { background: var(--ice); color: var(--accent-red); }
+.modal-grid { display: grid; grid-template-columns: 1fr 1fr; }
+.modal-gallery { background: #f1f5f9; position: relative; }
+.modal-main-img { aspect-ratio: 1/1; overflow: hidden; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg,#eff6ff,#dbeafe); }
+.modal-main-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; cursor: zoom-in; }
+.modal-main-img img:hover { transform: scale(1.08); }
+.modal-thumbs { display: flex; gap: 8px; padding: 12px; overflow-x: auto; }
+.thumb { width: 64px; height: 64px; border-radius: 6px; overflow: hidden; cursor: pointer; border: 2px solid transparent; flex-shrink: 0; transition: var(--transition); background: #dbeafe; display: flex; align-items: center; justify-content: center; }
+.thumb.active, .thumb:hover { border-color: var(--blue); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.modal-details { padding: 28px; overflow-y: auto; max-height: 80vh; }
+.modal-cat { font-size: 0.75rem; font-weight: 700; color: var(--blue-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
+.modal-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.8rem; color: var(--navy); line-height: 1.1; margin-bottom: 10px; }
+.modal-summary { color: var(--steel); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px; }
+.modal-moq-row { display: flex; align-items: center; gap: 24px; background: #f8fafc; border-radius: 8px; padding: 12px 16px; margin-bottom: 20px; }
+.modal-moq-item { display: flex; flex-direction: column; }
+.modal-moq-item .m-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--silver); font-weight: 600; }
+.modal-moq-item .m-value { font-weight: 700; color: var(--navy); font-size: 0.95rem; margin-top: 2px; }
+.modal-btns { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+.modal-btns .btn { justify-content: center; }
+
+/* Tabs */
+.modal-tabs { border-bottom: 2px solid var(--ice); display: flex; gap: 2px; flex-wrap: wrap; margin-bottom: 20px; }
+.tab-btn { padding: 10px 16px; font-family: 'Barlow', sans-serif; font-weight: 600; font-size: 0.85rem; color: var(--steel); background: none; border: none; cursor: pointer; position: relative; white-space: nowrap; transition: var(--transition); }
+.tab-btn.active { color: var(--blue); }
+.tab-btn.active::after { content:''; position:absolute; bottom:-2px; left:0; right:0; height:2px; background:var(--blue); }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+.spec-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.spec-table tr:nth-child(even) { background: #f8fafc; }
+.spec-table td { padding: 9px 12px; border-bottom: 1px solid var(--ice); }
+.spec-table td:first-child { font-weight: 600; color: var(--navy); width: 45%; }
+.spec-table td:last-child { color: var(--steel); }
+.app-list { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.app-list li { background: #eff6ff; color: var(--blue); padding: 5px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 500; }
+.review-card { background: #f8fafc; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; }
+.review-stars { color: var(--accent); font-size: 0.9rem; margin-bottom: 4px; }
+.review-text { font-size: 0.875rem; color: var(--steel); font-style: italic; margin-bottom: 8px; }
+.review-author { font-size: 0.8rem; font-weight: 600; color: var(--navy); }
+.review-country { font-size: 0.75rem; color: var(--steel); }
+
+/* ─── ABOUT ─── */
+#about { background: #fff; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+.about-img-stack { position: relative; }
+.about-main-img { border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4/3; background: linear-gradient(135deg,#1e3a5f,#2563be); display: flex; align-items: center; justify-content: center; box-shadow: 0 20px 60px rgba(10,22,40,0.2); }
+.about-main-img img { width: 100%; height: 100%; object-fit: cover; }
+.about-overlay-img { position: absolute; bottom: -24px; right: -24px; width: 45%; aspect-ratio: 1/1; border-radius: var(--radius); border: 4px solid #fff; overflow: hidden; box-shadow: 0 8px 32px rgba(10,22,40,0.2); background: linear-gradient(135deg,#dbeafe,#93c5fd); display: flex; align-items: center; justify-content: center; }
+.about-overlay-img img { width: 100%; height: 100%; object-fit: cover; }
+.about-years-badge { position: absolute; top: 20px; left: -20px; background: var(--navy); color: #fff; border-radius: 12px; padding: 16px 20px; box-shadow: 0 8px 32px rgba(10,22,40,0.3); }
+.about-years-badge .ynum { font-family: 'Barlow Condensed', sans-serif; font-size: 2.4rem; font-weight: 900; color: var(--accent); line-height: 1; }
+.about-years-badge .ytxt { font-size: 0.72rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.07em; }
+.about-list { list-style: none; margin: 20px 0 28px; display: flex; flex-direction: column; gap: 10px; }
+.about-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--steel); }
+.about-list li svg { width: 18px; height: 18px; fill: var(--blue); flex-shrink: 0; margin-top: 2px; }
+.cert-strip { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; }
+.cert-chip { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 7px 14px; font-size: 0.8rem; font-weight: 600; color: #166534; }
+
+/* ─── MANUFACTURING ─── */
+#manufacturing { background: var(--navy); color: #fff; }
+#manufacturing .section-title { color: #fff; }
+#manufacturing .section-title span { color: var(--accent); }
+#manufacturing .section-sub { color: rgba(255,255,255,0.6); }
+.process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2px; margin-top: 50px; position: relative; }
+.process-step { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); border-radius: var(--radius); padding: 28px 24px; position: relative; transition: var(--transition); }
+.process-step:hover { background: rgba(255,255,255,0.08); transform: translateY(-4px); }
+.step-num { font-family: 'Barlow Condensed', sans-serif; font-size: 3.5rem; font-weight: 900; color: rgba(255,255,255,0.06); position: absolute; top: 12px; right: 16px; line-height: 1; }
+.step-icon { width: 48px; height: 48px; background: rgba(59,130,246,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+.step-icon svg { width: 24px; height: 24px; fill: var(--blue-light); }
+.step-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.05rem; color: #fff; margin-bottom: 8px; letter-spacing: 0.02em; }
+.step-desc { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.5; }
+.factory-imgs { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; margin-top: 50px; }
+.factory-img { border-radius: var(--radius); overflow: hidden; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; }
+.factory-img.tall { grid-row: span 2; }
+.factory-img img { width: 100%; height: 100%; object-fit: cover; }
+.factory-img .fph { padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 10px; color: rgba(255,255,255,0.3); min-height: 160px; }
+.factory-img .fph svg { width: 40px; height: 40px; }
+.factory-img .fph span { font-size: 0.8rem; }
+
+/* ─── GLOBAL ─── */
+#global { background: #fff; }
+.global-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center; }
+.world-map { background: linear-gradient(135deg, #eff6ff, #dbeafe); border-radius: var(--radius-lg); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+.world-map svg { width: 100%; }
+.country-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
+.country-tag { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 20px; padding: 5px 13px; font-size: 0.8rem; font-weight: 600; color: var(--blue); display: flex; align-items: center; gap: 5px; }
+.country-flag { font-size: 1rem; }
+.export-features { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 24px; }
+.export-feat { background: var(--bg); border-radius: 8px; padding: 14px 16px; display: flex; align-items: flex-start; gap: 10px; }
+.export-feat svg { width: 20px; height: 20px; fill: var(--blue); flex-shrink: 0; margin-top: 2px; }
+.export-feat .ef-title { font-weight: 600; font-size: 0.875rem; color: var(--navy); }
+.export-feat .ef-desc { font-size: 0.78rem; color: var(--steel); margin-top: 2px; }
+
+/* ─── BLOG ─── */
+#blog { background: var(--bg); }
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+.blog-card { background: #fff; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-card); transition: var(--transition); cursor: pointer; }
+.blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.blog-img { aspect-ratio: 16/9; background: linear-gradient(135deg,#eff6ff,#dbeafe); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.blog-img img { width: 100%; height: 100%; object-fit: cover; }
+.blog-img .bph { color: #93c5fd; }
+.blog-img .bph svg { width: 40px; height: 40px; }
+.blog-body { padding: 20px; }
+.blog-cat { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--blue-light); margin-bottom: 8px; }
+.blog-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--navy); line-height: 1.25; margin-bottom: 8px; }
+.blog-excerpt { font-size: 0.85rem; color: var(--steel); line-height: 1.5; margin-bottom: 14px; }
+.blog-meta { display: flex; align-items: center; justify-content: space-between; font-size: 0.78rem; color: var(--silver); }
+
+/* ─── CONTACT ─── */
+#contact { background: var(--navy); }
+#contact .section-title { color: #fff; }
+#contact .section-title span { color: var(--accent); }
+#contact .section-label { color: var(--blue-light); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; }
+.contact-info { color: rgba(255,255,255,0.8); }
+.contact-info h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: 20px; }
+.contact-detail { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px; }
+.contact-detail .icon { width: 42px; height: 42px; background: rgba(255,255,255,0.07); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.contact-detail .icon svg { width: 20px; height: 20px; fill: var(--blue-light); }
+.contact-detail .cd-title { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.07em; color: rgba(255,255,255,0.4); margin-bottom: 4px; font-weight: 600; }
+.contact-detail .cd-value { font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+.contact-detail .cd-value a { color: inherit; text-decoration: none; }
+.contact-detail .cd-value a:hover { color: var(--blue-light); }
+.wa-big-btn { display: flex; align-items: center; gap: 12px; background: var(--whatsapp); color: #fff; border-radius: 10px; padding: 14px 22px; text-decoration: none; font-weight: 600; font-size: 1rem; margin-top: 24px; transition: var(--transition); }
+.wa-big-btn:hover { background: #1ebe5d; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.4); }
+.wa-big-btn svg { width: 28px; height: 28px; fill: #fff; flex-shrink: 0; }
+.map-embed { margin-top: 24px; border-radius: 10px; overflow: hidden; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); height: 160px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.35); font-size: 0.85rem; flex-direction: column; gap: 8px; }
+.map-embed svg { width: 32px; height: 32px; fill: rgba(255,255,255,0.2); }
+
+/* Form */
+.contact-form { background: #fff; border-radius: var(--radius-lg); padding: 36px; box-shadow: 0 24px 60px rgba(0,0,0,0.25); }
+.form-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.5rem; color: var(--navy); margin-bottom: 6px; }
+.form-sub { font-size: 0.875rem; color: var(--steel); margin-bottom: 24px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group.full { grid-column: span 2; }
+.form-group label { font-size: 0.8rem; font-weight: 700; color: var(--navy); letter-spacing: 0.04em; text-transform: uppercase; }
+.form-group input, .form-group select, .form-group textarea { padding: 11px 14px; border: 1.5px solid var(--ice); border-radius: 7px; font-family: 'Barlow', sans-serif; font-size: 0.9rem; color: var(--navy); background: #fff; transition: var(--transition); }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(26,79,160,0.1); }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-submit { margin-top: 20px; }
+.form-success { display: none; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 16px; color: #166534; font-weight: 600; margin-top: 16px; text-align: center; }
+
+/* ─── FOOTER ─── */
+footer { background: #060f1f; color: rgba(255,255,255,0.55); padding: 60px 0 24px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 50px; }
+.footer-brand .logo-text { margin-bottom: 14px; }
+.footer-brand .brand-name { color: #fff; font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.4rem; }
+.footer-brand .brand-tag { color: rgba(255,255,255,0.4); font-size: 0.7rem; }
+.footer-brand p { font-size: 0.875rem; line-height: 1.7; max-width: 280px; }
+.footer-col h4 { font-weight: 700; font-size: 0.875rem; color: rgba(255,255,255,0.9); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.footer-col ul li a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.875rem; transition: var(--transition); }
+.footer-col ul li a:hover { color: #fff; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 10px; flex-wrap: wrap; }
+.footer-bottom p { font-size: 0.8rem; }
+.footer-bottom .made { font-size: 0.78rem; display: flex; align-items: center; gap: 5px; }
+.made-flag { font-size: 1rem; }
+.social-links { display: flex; gap: 10px; }
+.social-link { width: 36px; height: 36px; background: rgba(255,255,255,0.06); border-radius: 8px; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+.social-link:hover { background: var(--blue); }
+.social-link svg { width: 16px; height: 16px; fill: rgba(255,255,255,0.7); }
+
+/* ─── PAGE SECTIONS ─── */
+.page-hero { background: var(--gradient-hero); padding: 60px 0; }
+.page-hero-content { max-width: 600px; }
+.page-hero-content h1 { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: clamp(2.2rem,4vw,3.2rem); color: #fff; margin-bottom: 12px; line-height: 1.05; }
+.page-hero-content p { color: rgba(255,255,255,0.7); font-size: 1rem; }
+.breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 14px; }
+.breadcrumb a { color: rgba(255,255,255,0.55); text-decoration: none; }
+.breadcrumb span { color: rgba(255,255,255,0.3); }
+
+/* ─── SCROLL TO TOP ─── */
+#back-top { position: fixed; bottom: 28px; right: 28px; width: 46px; height: 46px; background: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 16px rgba(26,79,160,0.4); transition: var(--transition); z-index: 500; opacity: 0; pointer-events: none; border: none; }
+#back-top.visible { opacity: 1; pointer-events: all; }
+#back-top:hover { background: var(--blue-mid); transform: translateY(-3px); }
+#back-top svg { width: 20px; height: 20px; fill: #fff; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .hero-content { grid-template-columns: 1fr; gap: 40px; padding: 60px 0; }
+  .hero-visual { order: -1; }
+  .hero-badge-float { left: 0; }
+  .hero-badge-float2 { right: 0; }
+  .about-grid, .global-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-img-stack { margin-bottom: 48px; }
+  .modal-grid { grid-template-columns: 1fr; }
+  .modal-details { max-height: none; }
+  .factory-imgs { grid-template-columns: 1fr 1fr; }
+  .factory-img.tall { grid-row: span 1; }
+}
+@media (max-width: 768px) {
+  .nav-links, .nav-actions { display: none; }
+  .hamburger { display: flex; }
+  .hero-stats { gap: 20px; }
+  .hero-btns .btn { flex: 1; justify-content: center; }
+  .trust-item { padding: 10px 18px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-group.full { grid-column: span 1; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .export-features { grid-template-columns: 1fr; }
+  section { padding: 60px 0; }
+  .process-steps { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .products-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .card-actions { flex-direction: column; }
+  .process-steps { grid-template-columns: 1fr; }
+  .hero-content { padding: 40px 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar">
+  <strong>🏭 PN Engineering Works</strong> &nbsp;|&nbsp; ISO Certified Manufacturer &nbsp;|&nbsp; Exporting to 50+ Countries &nbsp;|&nbsp; MOQ Flexible for New Buyers &nbsp;|&nbsp; <strong>📞 +91-9501711739</strong>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-main">
+    <a href="#" class="nav-logo" onclick="showSection('home')">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+      </div>
+      <div class="logo-text">
+        <span class="brand-name">PN Engineering Works</span>
+        <span class="brand-tag">Sewing Machine Parts · India</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#" onclick="showSection('home')" class="active" id="nav-home">Home</a>
+      <a href="#" onclick="showSection('products-page')" id="nav-products">Products</a>
+      <a href="#" onclick="scrollToId('about')" id="nav-about">About Us</a>
+      <a href="#" onclick="scrollToId('manufacturing')" id="nav-mfg">Manufacturing</a>
+      <a href="#" onclick="scrollToId('global')" id="nav-global">Global Reach</a>
+      <a href="#" onclick="showSection('blog-page')" id="nav-blog">Blog</a>
+      <a href="#" onclick="scrollToId('contact')" id="nav-contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <a href="tel:+919501711739" class="btn btn-outline btn-sm" style="color:var(--blue);border-color:var(--blue);">📞 Call Us</a>
+      <a href="#" onclick="scrollToId('contact')" class="btn btn-primary btn-sm">Request Quote</a>
+    </div>
+    <button class="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- CATEGORY BAR -->
+  <div class="cat-bar">
+    <div class="cat-bar-inner" id="catBar">
+      <button class="cat-btn active" onclick="filterCat('all')" data-cat="all"><span class="cat-icon">🔧</span> All Products</button>
+      <button class="cat-btn" onclick="filterCat('needles')" data-cat="needles"><span class="cat-icon">🪡</span> Needles</button>
+      <button class="cat-btn" onclick="filterCat('bobbins')" data-cat="bobbins"><span class="cat-icon">🎡</span> Bobbins</button>
+      <button class="cat-btn" onclick="filterCat('hooks')" data-cat="hooks"><span class="cat-icon">🔗</span> Hooks</button>
+      <button class="cat-btn" onclick="filterCat('motors')" data-cat="motors"><span class="cat-icon">⚙️</span> Motors</button>
+      <button class="cat-btn" onclick="filterCat('accessories')" data-cat="accessories"><span class="cat-icon">🛠️</span> Accessories</button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu">
+  <button class="mobile-close" onclick="toggleMobile()">✕</button>
+  <a href="#" onclick="showSection('home');toggleMobile()">🏠 Home</a>
+  <a href="#" onclick="showSection('products-page');toggleMobile()">📦 Products</a>
+  <a href="#" onclick="scrollToId('about');toggleMobile()">🏭 About Us</a>
+  <a href="#" onclick="scrollToId('manufacturing');toggleMobile()">⚙️ Manufacturing</a>
+  <a href="#" onclick="scrollToId('global');toggleMobile()">🌍 Global Reach</a>
+  <a href="#" onclick="showSection('blog-page');toggleMobile()">📝 Blog</a>
+  <a href="#" onclick="scrollToId('contact');toggleMobile()">📬 Contact</a>
+  <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;">
+    <a href="tel:+919501711739" class="btn btn-outline" style="justify-content:center;border-color:rgba(255,255,255,0.3)">📞 Call: +91-9501711739</a>
+    <a href="#" onclick="scrollToId('contact');toggleMobile()" class="btn btn-primary" style="justify-content:center;">Request Quote</a>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════ HOME PAGE ════════════════════════════════════ -->
+<div id="page-home">
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span></span> ISO 9001:2015 Certified · Made in India
+        </div>
+        <h1 class="hero-headline">
+          Leading <em>Manufacturer</em><br>of Sewing Machine<br>Parts
+        </h1>
+        <p class="hero-sub">PN Engineering Works supplies precision-engineered sewing machine components to garment factories, distributors, and OEMs across 50+ countries. Competitive MOQ. Superior quality. Reliable delivery.</p>
+        <div class="hero-btns">
+          <a href="#" onclick="showSection('products-page')" class="btn btn-accent">📦 View Products</a>
+          <a href="#" onclick="scrollToId('contact')" class="btn btn-outline">✉️ Request a Quote</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="num">25+</div><div class="lbl">Years Experience</div></div>
+          <div class="hero-stat"><div class="num">50+</div><div class="lbl">Countries Served</div></div>
+          <div class="hero-stat"><div class="num">500+</div><div class="lbl">Product SKUs</div></div>
+          <div class="hero-stat"><div class="num">10K+</div><div class="lbl">Happy Clients</div></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-badge-float2">
+          <div class="num">ISO</div>
+          <div class="lbl">Certified</div>
+        </div>
+        <div class="hero-img-main">
+          <div class="img-placeholder">
+            <svg viewBox="0 0 24 24" fill="rgba(255,255,255,0.4)"><path d="M20 7h-4V5c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-8-2h4v2h-4V5zm-2 9h-2v-2h2v2zm8 0h-6v-2h6v2z"/></svg>
+            <span>Factory & Product Photography</span>
+          </div>
+        </div>
+        <div class="hero-badge-float">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21H3c0 0 .5-3 2.5-5.5 0 0-1 0-2.5.5 2-3.5 5-7.5 14-8z"/><path d="M14 20c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg></div>
+          <div class="info"><div class="title">Global Shipping</div><div class="sub">Air, Sea & Courier</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="var(--blue)"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        <div class="t-text"><div class="t-title">ISO 9001:2015</div><div class="t-sub">Quality Certified</div></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="var(--blue)"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <div class="t-text"><div class="t-title">Made in India</div><div class="t-sub">Ludhiana, Punjab</div></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="var(--blue)"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+        <div class="t-text"><div class="t-title">Flexible MOQ</div><div class="t-sub">From 100 units</div></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="var(--blue)"><path d="M21 3L3 10.53v.98l6.84 2.65L12.48 21h.98L21 3z"/></svg>
+        <div class="t-text"><div class="t-title">50+ Countries</div><div class="t-sub">Global Exporter</div></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="var(--blue)"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        <div class="t-text"><div class="t-title">10K+ Clients</div><div class="t-sub">Trusted Worldwide</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<section id="featured-products">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-label">Our Product Range</span>
+      <h2 class="section-title">Precision Parts for <span>Every Machine</span></h2>
+      <p class="section-sub">Browse our extensive range of sewing machine components — engineered for performance, built for durability.</p>
+    </div>
+    <div class="products-grid" id="featured-grid"></div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="#" onclick="showSection('products-page')" class="btn btn-primary">View All Products →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-stack">
+        <div class="about-years-badge"><div class="ynum">25+</div><div class="ytxt">Years of Excellence</div></div>
+        <div class="about-main-img">
+          <div class="img-placeholder" style="color:rgba(255,255,255,0.4);display:flex;flex-direction:column;align-items:center;gap:10px;padding:40px;">
+            <svg viewBox="0 0 24 24" width="50" height="50" fill="currentColor"><path d="M4 10h3v7H4zm6.5-6h3v13h-3zm6.5 3h3v10h-3z"/></svg>
+            <span style="font-size:0.85rem">Factory Operations Image</span>
+          </div>
+        </div>
+        <div class="about-overlay-img">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="#93c5fd"><path d="M19.5 12c0-3.59-2.91-6.5-6.5-6.5S6.5 8.41 6.5 12s2.91 6.5 6.5 6.5 6.5-2.91 6.5-6.5zm-6.5 5c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/><circle cx="12" cy="12" r="2.5"/></svg>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-label">About PN Engineering Works</span>
+        <h2 class="section-title">Manufacturing <span>Excellence</span> Since 1999</h2>
+        <p class="section-sub" style="max-width:100%">Founded in Ludhiana, Punjab — India's industrial heartland — PN Engineering Works has grown into a trusted global supplier of precision sewing machine parts. Our state-of-the-art manufacturing facility houses CNC machining centers, automated assembly lines, and a rigorous quality assurance lab.</p>
+        <ul class="about-list">
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> 40,000+ sq. ft. manufacturing facility in Ludhiana, India</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> 200+ skilled engineers, machinists and quality inspectors</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> In-house R&D for custom part development and OEM support</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Advanced CMM inspection and salt spray testing equipment</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Compatibility with Brother, Juki, Singer, Pfaff, Siruba, Jack & more</li>
+        </ul>
+        <div class="cert-strip">
+          <span class="cert-chip">✅ ISO 9001:2015</span>
+          <span class="cert-chip">✅ CE Compliant</span>
+          <span class="cert-chip">✅ DGFT Registered</span>
+          <span class="cert-chip">✅ IEC Certified</span>
+        </div>
+        <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="#" onclick="scrollToId('manufacturing')" class="btn btn-primary">Our Manufacturing Process</a>
+          <a href="#" onclick="scrollToId('contact')" class="btn btn-outline" style="color:var(--blue);border-color:var(--blue)">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MANUFACTURING -->
+<section id="manufacturing">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-label" style="color:var(--accent)">Our Factory</span>
+      <h2 class="section-title">World-Class <span>Manufacturing</span></h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.6);margin:14px auto 0">From raw material sourcing to final quality inspection, every step is engineered for precision and consistency.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step"><div class="step-num">01</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M12 2l-5.5 9h11L12 2zm0 3.84L14.6 10h-5.2L12 5.84zM17.5 13c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5zm0 7c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM3 21.5h8v-8H3v8zm2-6h4v4H5v-4z"/></svg></div><div class="step-title">Raw Material Sourcing</div><div class="step-desc">High-grade steel, alloys and polymers sourced from certified suppliers with full material traceability.</div></div>
+      <div class="process-step"><div class="step-num">02</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></div><div class="step-title">CNC Machining</div><div class="step-desc">State-of-the-art CNC lathes and milling centers for micron-level precision on every component.</div></div>
+      <div class="process-step"><div class="step-num">03</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l6 2.67v4.55c0 3.55-2.5 6.89-6 7.93-3.5-1.04-6-4.38-6-7.93V7.67L12 5z"/></svg></div><div class="step-title">Heat Treatment</div><div class="step-desc">Controlled hardening and tempering processes to achieve optimal strength, hardness, and durability.</div></div>
+      <div class="process-step"><div class="step-num">04</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg></div><div class="step-title">Surface Finishing</div><div class="step-desc">Chrome plating, nickel coating, and anodizing to enhance corrosion resistance and aesthetics.</div></div>
+      <div class="process-step"><div class="step-num">05</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></div><div class="step-title">Quality Inspection</div><div class="step-desc">100% dimensional inspection using CMM, vision systems, and functional testing before dispatch.</div></div>
+      <div class="process-step"><div class="step-num">06</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-7 3h2v2h-2V7zm0 4h2v6h-2v-6zm-4-4h2v2H9V7zm0 4h2v6H9v-6z"/></svg></div><div class="step-title">Export Packaging</div><div class="step-desc">Individual poly-bags, anti-rust packaging, and export-grade cartons with full labelling and documentation.</div></div>
+    </div>
+    <div class="factory-imgs">
+      <div class="factory-img tall">
+        <div class="fph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 9V7h-2V5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2zm-4 10H4V5h14v14z"/></svg><span>CNC Machining Floor</span></div>
+      </div>
+      <div class="factory-img">
+        <div class="fph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg><span>Quality Lab</span></div>
+      </div>
+      <div class="factory-img">
+        <div class="fph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 7h-4V5c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg><span>Packaging Area</span></div>
+      </div>
+      <div class="factory-img">
+        <div class="fph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg><span>Assembly Line</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL PRESENCE -->
+<section id="global">
+  <div class="container">
+    <div class="global-grid">
+      <div>
+        <span class="section-label">Global Export Network</span>
+        <h2 class="section-title">Serving Buyers Across <span>50+ Countries</span></h2>
+        <p class="section-sub">From Southeast Asia to Europe, the Americas to the Middle East — PN Engineering Works parts power garment factories worldwide.</p>
+        <div class="country-tags">
+          <span class="country-tag"><span class="country-flag">🇺🇸</span> USA</span>
+          <span class="country-tag"><span class="country-flag">🇬🇧</span> UK</span>
+          <span class="country-tag"><span class="country-flag">🇩🇪</span> Germany</span>
+          <span class="country-tag"><span class="country-flag">🇧🇩</span> Bangladesh</span>
+          <span class="country-tag"><span class="country-flag">🇵🇰</span> Pakistan</span>
+          <span class="country-tag"><span class="country-flag">🇳🇬</span> Nigeria</span>
+          <span class="country-tag"><span class="country-flag">🇧🇷</span> Brazil</span>
+          <span class="country-tag"><span class="country-flag">🇹🇷</span> Turkey</span>
+          <span class="country-tag"><span class="country-flag">🇲🇾</span> Malaysia</span>
+          <span class="country-tag"><span class="country-flag">🇰🇪</span> Kenya</span>
+          <span class="country-tag"><span class="country-flag">🇿🇦</span> South Africa</span>
+          <span class="country-tag"><span class="country-flag">🇪🇬</span> Egypt</span>
+          <span class="country-tag"><span class="country-flag">🇮🇹</span> Italy</span>
+          <span class="country-tag"><span class="country-flag">🇯🇵</span> Japan</span>
+          <span class="country-tag">+ 36 more</span>
+        </div>
+        <div class="export-features">
+          <div class="export-feat"><svg viewBox="0 0 24 24"><path d="M21 3L3 10.53v.98l6.84 2.65L12.48 21h.98L21 3z"/></svg><div><div class="ef-title">Air & Sea Freight</div><div class="ef-desc">Express courier and FCL/LCL sea shipments worldwide</div></div></div>
+          <div class="export-feat"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-7 3h2v2h-2V7zm0 4h2v6h-2v-6z"/></svg><div><div class="ef-title">Full Documentation</div><div class="ef-desc">Commercial invoice, packing list, COO, and test reports</div></div></div>
+          <div class="export-feat"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg><div><div class="ef-title">Export Packaging</div><div class="ef-desc">Anti-rust, moisture-proof packaging for long transit</div></div></div>
+          <div class="export-feat"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg><div><div class="ef-title">On-time Delivery</div><div class="ef-desc">98% on-time shipment rate with real-time tracking</div></div></div>
+        </div>
+      </div>
+      <div class="world-map">
+        <svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" style="width:100%;padding:20px">
+          <rect width="900" height="500" fill="#eff6ff"/>
+          <!-- Simplified world map shapes -->
+          <!-- North America -->
+          <path d="M80 80 L200 70 L230 100 L220 160 L190 190 L160 200 L140 180 L100 180 L80 160 Z" fill="#93c5fd" stroke="#fff" stroke-width="2"/>
+          <!-- South America -->
+          <path d="M160 210 L200 200 L220 230 L210 300 L190 340 L170 340 L150 300 L140 250 Z" fill="#93c5fd" stroke="#fff" stroke-width="2"/>
+          <!-- Europe -->
+          <path d="M380 70 L450 60 L470 90 L460 120 L430 130 L400 120 L380 100 Z" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+          <!-- Africa -->
+          <path d="M390 140 L450 130 L480 160 L480 260 L450 300 L420 300 L390 270 L370 200 L380 160 Z" fill="#93c5fd" stroke="#fff" stroke-width="2"/>
+          <!-- Middle East -->
+          <path d="M470 100 L530 90 L550 120 L540 150 L490 160 L465 140 Z" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+          <!-- South Asia (highlighted - India) -->
+          <path d="M560 110 L610 100 L630 130 L625 180 L600 210 L575 200 L555 170 L550 140 Z" fill="#1a4fa0" stroke="#fff" stroke-width="2"/>
+          <circle cx="585" cy="150" r="8" fill="#f59e0b"/>
+          <text x="595" y="145" fill="#1a4fa0" font-size="10" font-weight="bold">India</text>
+          <!-- Southeast Asia -->
+          <path d="M640 110 L700 100 L720 130 L700 170 L660 160 L640 140 Z" fill="#93c5fd" stroke="#fff" stroke-width="2"/>
+          <!-- East Asia -->
+          <path d="M680 60 L770 50 L790 80 L780 120 L730 130 L690 110 L670 85 Z" fill="#93c5fd" stroke="#fff" stroke-width="2"/>
+          <!-- Australia -->
+          <path d="M680 280 L760 270 L790 310 L770 360 L720 370 L680 340 L665 300 Z" fill="#bfdbfe" stroke="#fff" stroke-width="2"/>
+          <!-- Connection lines from India -->
+          <line x1="585" y1="150" x2="170" y2="130" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4" opacity="0.5"/>
+          <line x1="585" y1="150" x2="420" y2="90" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4" opacity="0.5"/>
+          <line x1="585" y1="150" x2="430" y2="200" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4" opacity="0.5"/>
+          <line x1="585" y1="150" x2="680" y2="130" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4" opacity="0.5"/>
+          <line x1="585" y1="150" x2="720" y2="310" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4" opacity="0.5"/>
+          <!-- Dot markers for major countries -->
+          <circle cx="170" cy="130" r="5" fill="#f59e0b"/>
+          <circle cx="420" cy="90" r="5" fill="#f59e0b"/>
+          <circle cx="430" cy="200" r="5" fill="#f59e0b"/>
+          <circle cx="680" cy="130" r="5" fill="#f59e0b"/>
+          <circle cx="720" cy="310" r="5" fill="#f59e0b"/>
+          <circle cx="510" cy="115" r="5" fill="#f59e0b"/>
+          <text x="430" y="420" fill="#64748b" font-size="12" text-anchor="middle">Global Export Network — 50+ Countries</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<section id="blog-preview">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-label">Resources & Insights</span>
+      <h2 class="section-title">Sewing Machine <span>Knowledge Hub</span></h2>
+      <p class="section-sub">Expert guides, maintenance tips, and buying guides to help you get the most from your sewing machines.</p>
+    </div>
+    <div class="blog-grid" id="blog-preview-grid"></div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="#" onclick="showSection('blog-page')" class="btn btn-primary">View All Articles →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Request a <span>Quote</span> Today</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>PN Engineering Works</h3>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+          <div><div class="cd-title">Factory Address</div><div class="cd-value">Industrial Area, Phase IX, Focal Point,<br>Ludhiana – 141010, Punjab, India</div></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+          <div><div class="cd-title">Phone / WhatsApp</div><div class="cd-value"><a href="tel:+919501711739">+91-9501711739</a></div></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+          <div><div class="cd-title">Email</div><div class="cd-value"><a href="mailto:pnengworksofficial@gmail.com">pnengworksofficial@gmail.com</a></div></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
+          <div><div class="cd-title">Business Hours</div><div class="cd-value">Mon–Sat: 9:00 AM – 6:30 PM IST</div></div>
+        </div>
+        <a href="https://wa.me/919501711739?text=Hello%20PN%20Engineering%20Works,%20I%20would%20like%20to%20request%20a%20quote." target="_blank" class="wa-big-btn">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp Now
+        </a>
+        <div class="map-embed">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span>Ludhiana, Punjab, India</span>
+          <span style="font-size:0.75rem;opacity:0.6">[Google Map embed here]</span>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <div class="form-title">Request a Bulk Quote</div>
+        <div class="form-sub">Fill in your requirements and our export team will respond within 24 hours.</div>
+<div class="form-grid">
+          <div class="form-group"><label>Full Name *</label><input type="text" id="form-name" placeholder="John Smith"></div>
+          <div class="form-group"><label>Company Name *</label><input type="text" id="form-company" placeholder="ABC Garments Ltd."></div>
+          <div class="form-group"><label>Email Address *</label><input type="email" id="form-email" placeholder="john@company.com"></div>
+          <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" id="form-phone" placeholder="+1 555 000 0000"></div>
+          <div class="form-group"><label>Country</label><input type="text" id="form-country" placeholder="United States"></div>
+          <div class="form-group"><label>Product Category</label>
+            <select id="form-category">
+              <option value="">Select Category</option>
+              <option>Needles</option>
+              <option>Bobbins</option>
+              <option>Hooks & Rotary Hooks</option>
+              <option>Motors & Parts</option>
+              <option>Presser Feet</option>
+              <option>Accessories</option>
+              <option>Custom / OEM</option>
+            </select>
+          </div>
+          <div class="form-group full"><label>Product Details & Quantity</label><textarea id="form-details" placeholder="Please describe the products you need, part numbers if available, required quantity, and any specific technical requirements..."></textarea></div>
+        </div>
+        <div class="form-submit">
+<button class="btn btn-whatsapp" style="width:100%;justify-content:center;padding:14px;font-size:1rem" onclick="submitForm()">📱 Send Quote via WhatsApp</button>
+        </div>
+        <div class="form-success" id="form-success">✅ Your inquiry has been sent successfully! Our team will contact you within 24 hours.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end page-home -->
+
+<!-- ════════════════════════════════════ PRODUCTS PAGE ════════════════════════════════════ -->
+<div id="page-products" class="hidden">
+  <div class="page-hero">
+    <div class="container">
+      <div class="hero-grid-bg" style="opacity:0.03"></div>
+      <div class="page-hero-content">
+        <div class="breadcrumb"><a href="#" onclick="showSection('home')">Home</a><span>/</span> Products</div>
+        <h1>Our Product Catalog</h1>
+        <p>500+ precision sewing machine parts for industrial and household machines. All products available for bulk B2B orders.</p>
+      </div>
+    </div>
+  </div>
+  <section style="background:var(--bg)">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-group"><label>Machine Type</label><select onchange="applyFilters()"><option value="">All Types</option><option>Industrial</option><option>Household</option><option>Overlock</option><option>Flatbed</option><option>Embroidery</option></select></div>
+        <div class="filter-group"><label>Material</label><select onchange="applyFilters()"><option value="">All Materials</option><option>High Carbon Steel</option><option>Stainless Steel</option><option>Alloy Steel</option><option>Aluminium</option><option>Nylon</option></select></div>
+        <div class="filter-group"><label>Compatibility</label><select onchange="applyFilters()"><option value="">All Brands</option><option>Juki</option><option>Brother</option><option>Singer</option><option>Pfaff</option><option>Siruba</option><option>Jack</option></select></div>
+        <div class="filter-group"><label>Sort By</label><select onchange="applyFilters()"><option>Featured</option><option>Name A–Z</option><option>MOQ: Low to High</option></select></div>
+        <div class="results-count" id="results-count"></div>
+      </div>
+      <div class="products-grid" id="full-products-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ════════════════════════════════════ BLOG PAGE ════════════════════════════════════ -->
+<div id="page-blog" class="hidden">
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="breadcrumb"><a href="#" onclick="showSection('home')">Home</a><span>/</span> Blog & Resources</div>
+        <h1>Sewing Machine Knowledge Hub</h1>
+        <p>Expert articles, maintenance guides, and buying resources for sewing machine professionals and buyers worldwide.</p>
+      </div>
+    </div>
+  </div>
+  <section style="background:var(--bg)">
+    <div class="container">
+      <div class="blog-grid" id="full-blog-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ════════════════════════════════════ PRODUCT MODAL ════════════════════════════════════ -->
+<div id="product-modal">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-grid">
+      <div class="modal-gallery">
+        <div class="modal-main-img">
+          <div id="modal-img-ph" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eff6ff,#dbeafe)">
+            <svg viewBox="0 0 24 24" width="60" height="60" fill="#93c5fd"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-2 10l-4-3-1 1.5-3-4-5 6h16l-3-0.5z"/></svg>
+          </div>
+        </div>
+        <div class="modal-thumbs" id="modal-thumbs"></div>
+      </div>
+      <div class="modal-details">
+        <div class="modal-cat" id="modal-cat"></div>
+        <div class="modal-name" id="modal-name"></div>
+        <div class="modal-summary" id="modal-summary"></div>
+        <div class="modal-moq-row">
+          <div class="modal-moq-item"><span class="m-label">Min Order Qty</span><span class="m-value" id="modal-moq"></span></div>
+          <div class="modal-moq-item"><span class="m-label">Lead Time</span><span class="m-value" id="modal-lead"></span></div>
+          <div class="modal-moq-item"><span class="m-label">Packaging</span><span class="m-value" id="modal-pkg"></span></div>
+        </div>
+        <div class="modal-btns">
+          <a href="#" onclick="closeModal();scrollToId('contact')" class="btn btn-primary">📨 Request Quote for This Product</a>
+          <a href="https://wa.me/919501711739" target="_blank" class="btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+            Contact via WhatsApp
+          </a>
+        </div>
+        <div class="modal-tabs" id="modal-tabs">
+          <button class="tab-btn active" onclick="switchTab(this,'desc')">Description</button>
+          <button class="tab-btn" onclick="switchTab(this,'specs')">Specifications</button>
+          <button class="tab-btn" onclick="switchTab(this,'apps')">Applications</button>
+          <button class="tab-btn" onclick="switchTab(this,'shipping')">Packaging & Shipping</button>
+          <button class="tab-btn" onclick="switchTab(this,'reviews')">Reviews</button>
+        </div>
+        <div class="tab-panel active" id="tab-desc"></div>
+        <div class="tab-panel" id="tab-specs"></div>
+        <div class="tab-panel" id="tab-apps"></div>
+        <div class="tab-panel" id="tab-shipping"></div>
+        <div class="tab-panel" id="tab-reviews"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BACK TO TOP -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></svg>
+</button>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text" style="margin-bottom:14px">
+          <div class="brand-name">PN Engineering Works</div>
+          <div class="brand-tag">Sewing Machine Parts Manufacturer · India</div>
+        </div>
+        <p>India's trusted manufacturer and global exporter of precision sewing machine parts. Serving garment factories, distributors, and OEMs in 50+ countries since 1999.</p>
+        <div style="margin-top:20px;display:flex;gap:8px;flex-wrap:wrap">
+          <span class="cert-chip">ISO 9001:2015</span>
+          <span class="cert-chip">IEC Certified</span>
+          <span class="cert-chip">DGFT Registered</span>
+        </div>
+        <div class="social-links" style="margin-top:16px">
+          <a class="social-link" href="#"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a class="social-link" href="#"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a class="social-link" href="#"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#" onclick="filterCat('needles');showSection('products-page')">Industrial Needles</a></li>
+          <li><a href="#" onclick="filterCat('bobbins');showSection('products-page')">Bobbins & Cases</a></li>
+          <li><a href="#" onclick="filterCat('hooks');showSection('products-page')">Hooks & Rotary Hooks</a></li>
+          <li><a href="#" onclick="filterCat('motors');showSection('products-page')">Motors & Parts</a></li>
+          <li><a href="#" onclick="filterCat('accessories');showSection('products-page')">Presser Feet</a></li>
+          <li><a href="#" onclick="showSection('products-page')">Custom OEM Parts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#" onclick="scrollToId('about')">About Us</a></li>
+          <li><a href="#" onclick="scrollToId('manufacturing')">Manufacturing</a></li>
+          <li><a href="#" onclick="scrollToId('global')">Global Presence</a></li>
+          <li><a href="#" onclick="showSection('blog-page')">Blog & Resources</a></li>
+          <li><a href="#" onclick="scrollToId('contact')">Contact Us</a></li>
+          <li><a href="#">Request a Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📍 Ludhiana, Punjab, India</a></li>
+          <li><a href="tel:+919501711739">📞 +91-9501711739</a></li>
+          <li><a href="mailto:pnengworksofficial@gmail.com">✉️ pnengworksofficial@gmail.com</a></li>
+          <li><a href="https://wa.me/919501711739" target="_blank">💬 WhatsApp Us</a></li>
+        </ul>
+        <div style="margin-top:16px">
+          <p style="font-size:0.78rem;color:rgba(255,255,255,0.35);line-height:1.7">Mon–Sat: 9:00 AM – 6:30 PM IST<br>Export inquiries welcome 24/7</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 PN Engineering Works. All rights reserved.</p>
+      <div class="made"><span class="made-flag">🇮🇳</span> Proudly manufactured in India</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ─── DATA ───
+const products = [
+  { id:1, cat:'needles', name:'Industrial Lockstitch Needle DB×1', desc:'High-carbon steel needles for Juki, Brother, Singer lockstitch machines. Polished eye for reduced thread breakage.', moq:'10,000 pcs', lead:'7–10 days', pkg:'100 pcs/box', badge:'bestseller', badgeColor:'tag-green', specs:[['Material','High Carbon Steel'],['Finish','Nickel Plated'],['Sizes Available','#9 to #23'],['Compatibility','Juki, Brother, Singer, Siruba'],['Standard','DB×1 / 1738']],apps:['Garment factories','Denim stitching','Uniform manufacturing','Home textile production'],desc2:'The DB×1 lockstitch needle is the industry standard for single-needle lockstitch machines worldwide. Manufactured from premium high-carbon steel with a precision-ground point and nickel plating to resist corrosion and wear. Compatible with all major brands including Juki, Brother, Singer, Pfaff, Consew, and Siruba.', shipping:'Individual: 100 pcs poly-bag with label. Export carton: 100 boxes (10,000 pcs). Carton dimensions: 35×25×20 cm. Weight: ~4.5 kg/carton. Shipping: DHL, FedEx, sea freight available.', reviews:[{stars:5,text:'Excellent quality, consistent sizing. We have been sourcing from PN Engineering for 3 years.',author:'Ahmed K.',country:'🇧🇩 Bangladesh'},{stars:5,text:'Smooth finish, no thread breakage issues at all. Highly recommended for industrial use.',author:'Maria T.',country:'🇧🇷 Brazil'}]},
+  { id:2, cat:'bobbins', name:'Class 15 Bobbin (Metal)', desc:'Precision-wound metal bobbins for household and light-industrial sewing machines. Uniform thickness for smooth tension.', moq:'5,000 pcs', lead:'5–7 days', pkg:'100 pcs/box', badge:'popular', badgeColor:'tag-blue', specs:[['Material','Cold Rolled Steel'],['Finish','Nickel Plated'],['Inner Diameter','11.6 mm'],['Outer Diameter','20.3 mm'],['Height','11.7 mm'],['Standard','Class 15 / SA156']],apps:['Home sewing machines','Light industrial machines','Embroidery machines'],desc2:'Class 15 metal bobbins offer superior durability and consistent thread tension compared to plastic alternatives. Precision-stamped and plated for smooth rotation in the bobbin case.', shipping:'100 pcs per box, 50 boxes per carton. Sea freight recommended for large orders.', reviews:[{stars:5,text:'Perfect fit for Singer machines. Runs smooth.',author:'Linda P.',country:'🇺🇸 USA'},{stars:4,text:'Good quality bobbins at great price.',author:'Peter N.',country:'🇳🇬 Nigeria'}]},
+  { id:3, cat:'hooks', name:'CB Hook / Rotary Hook Assembly', desc:'Long-life hardened steel rotary hook for industrial lockstitch machines. Tight tolerance for reliable loop formation.', moq:'500 pcs', lead:'10–14 days', pkg:'10 pcs/box', badge:'', badgeColor:'', specs:[['Material','Alloy Tool Steel'],['Hardness','HRC 60–62'],['Type','Rotary Hook'],['Compatible With','Juki DDL-5550, 8700, 9000 series'],['Finish','Mirror Polished']],apps:['Industrial single-needle machines','Tailoring units','Leather stitching'],desc2:'The CB Rotary Hook Assembly is engineered for high-speed industrial sewing machines running at 5000+ RPM. Heat-treated alloy steel construction ensures extended service life even under continuous production conditions.', shipping:'10 pcs bubble-wrapped per box, 50 boxes per carton. Fragile — air freight recommended.', reviews:[{stars:5,text:'Machining quality is top notch. Hooks last 3× longer than local alternatives.',author:'Sanjay V.',country:'🇮🇳 India'},{stars:5,text:'Excellent finish and fit. Zero issues in 6 months.',author:'Kenji T.',country:'🇯🇵 Japan'}]},
+  { id:4, cat:'motors', name:'Servo Motor 550W – Variable Speed', desc:'Energy-efficient servo motor for industrial sewing machines. 80% energy savings vs clutch motors. Quiet, precise control.', moq:'50 pcs', lead:'14–21 days', pkg:'1 pc/box', badge:'new', badgeColor:'tag-amber', specs:[['Power','550W'],['Voltage','110V/220V AC'],['Speed Range','100–4500 RPM'],['Control','Digital Panel'],['Energy Saving','Up to 80% vs clutch motor'],['Noise Level','<60 dB']],apps:['Garment factories','Upholstery shops','Shoe manufacturing','Bag making'],desc2:'Our 550W servo motor replaces traditional clutch motors with significant energy and noise reductions. The digital speed controller allows precise stitch speed management, improving quality and reducing operator fatigue.', shipping:'Individual export carton with foam protection. 10 motors per pallet. Sea freight recommended.', reviews:[{stars:5,text:'Superb energy savings! Our electricity bill dropped 40%.',author:'Rashid M.',country:'🇵🇰 Pakistan'},{stars:4,text:'Quiet and smooth. Installation was straightforward.',author:'Hans G.',country:'🇩🇪 Germany'}]},
+  { id:5, cat:'needles', name:'Overlock Needle DCx27', desc:'Specialized overlock/serger needles for 3 and 5-thread overlock machines. Prevents skipped stitches.', moq:'10,000 pcs', lead:'7 days', pkg:'100 pcs/box', badge:'', badgeColor:'', specs:[['Standard','DCx27 / 81×1'],['Material','High Carbon Steel'],['Sizes','#11, #14, #16'],['Compatibility','Yamato, Pegasus, Siruba, Brother overlock']],apps:['Knitwear production','T-shirt manufacturing','Sportswear factories'],desc2:'DCx27 overlock needles are precision-ground for clean seams on knitwear and stretch fabrics. The scarf design prevents skipped stitches at high overlock speeds.', shipping:'100 pcs/box, 100 boxes/carton. Standard air or sea shipment.', reviews:[{stars:5,text:'No more skipped stitches! Great quality.',author:'Sarah L.',country:'🇬🇧 UK'}]},
+  { id:6, cat:'accessories', name:'Presser Foot Set – Universal (12 pcs)', desc:'Comprehensive set of 12 presser feet for household sewing machines. Includes zipper, buttonhole, blind hem, and more.', moq:'200 sets', lead:'7–10 days', pkg:'1 set/box', badge:'popular', badgeColor:'tag-blue', specs:[['Set Includes','12 presser feet'],['Material','Zinc Alloy + Steel'],['Compatibility','Low shank (Singer, Brother, Toyota, Janome)'],['Finish','Chrome Plated']],apps:['Home sewing','Tailoring shops','Vocational training centers'],desc2:'This 12-piece universal presser foot set covers the most commonly needed feet for home sewing machines. Each foot is precision-cast and chrome-plated for durability and smooth fabric feeding.', shipping:'1 set per retail box, 50 sets per export carton. Safe for air and sea freight.', reviews:[{stars:5,text:'Perfect set. All feet fit great and work well.',author:'Emma D.',country:'🇦🇺 Australia'}]},
+  { id:7, cat:'bobbins', name:'Bobbin Case – Industrial (Standard)', desc:'High-tolerance bobbin case for industrial sewing machines. Precision-machined for consistent thread tension.', moq:'1,000 pcs', lead:'7 days', pkg:'10 pcs/box', badge:'', badgeColor:'', specs:[['Material','Alloy Steel'],['Finish','Mirror Polish'],['Type','Standard Industrial'],['Compatible','Juki, Brother, Consew lockstitch']],apps:['Industrial garment production','Uniform stitching'],desc2:'Industrial bobbin case with laser-calibrated tension spring. Resists wear over millions of stitch cycles.', shipping:'10 pcs per box with foam padding. 100 boxes per carton.', reviews:[{stars:5,text:'Consistent tension, no jamming.',author:'Kwame O.',country:'🇬🇭 Ghana'}]},
+  { id:8, cat:'motors', name:'Clutch Motor 400W – Standard', desc:'Reliable 400W clutch motor for industrial sewing machines. Heavy-duty induction motor with V-belt pulley.', moq:'20 pcs', lead:'14 days', pkg:'1 pc/box', badge:'', badgeColor:'', specs:[['Power','400W'],['Voltage','220V/380V'],['Speed','1400/2800 RPM'],['Pulley','V-Belt 2-Groove'],['Frame','Cast Iron']],apps:['Industrial sewing machines','Leather stitching machines'],desc2:'Heavy-duty cast iron frame clutch motor for reliable long-term industrial use. Available in single and three-phase configurations.', shipping:'Individual foam-padded export carton. Sea freight for bulk orders.', reviews:[{stars:4,text:'Solid motor, runs very smoothly.',author:'Ali R.',country:'🇮🇷 Iran'}]},
+];
+
+const blogPosts = [
+  { id:1, cat:'Maintenance Guide', title:'How to Choose the Right Sewing Machine Needle for Your Fabric', excerpt:'Selecting the correct needle type and size is critical to stitch quality. This guide covers needle systems, point types, and fabric compatibility for industrial and home machines.', date:'Dec 12, 2024', read:'6 min read' },
+  { id:2, cat:'Buying Guide', title:'Industrial vs Servo Motor: Which is Right for Your Garment Factory?', excerpt:'A detailed comparison of clutch motors and servo motors for industrial sewing machines — energy consumption, noise levels, speed control, and ROI analysis.', date:'Nov 28, 2024', read:'8 min read' },
+  { id:3, cat:'Technical Tips', title:'Why Bobbins Matter: Understanding Tension and Thread Consistency', excerpt:'Poor bobbin quality is one of the top causes of thread breakage and uneven stitching. Learn what specifications matter and how to source quality bobbins for bulk production.', date:'Nov 10, 2024', read:'5 min read' },
+  { id:4, cat:'Industry Insights', title:'Sourcing Sewing Machine Parts from India: A Complete B2B Buyer\'s Guide', excerpt:'India is one of the world\'s largest manufacturers of sewing machine components. Here\'s everything you need to know about sourcing, quality verification, and import logistics.', date:'Oct 22, 2024', read:'10 min read' },
+  { id:5, cat:'Maintenance Guide', title:'Rotary Hook Timing and Maintenance: Preventing Skipped Stitches', excerpt:'The rotary hook is the most critical component in a lockstitch machine. This guide explains hook timing, maintenance intervals, and when to replace hooks for smooth production.', date:'Oct 5, 2024', read:'7 min read' },
+  { id:6, cat:'Product Guide', title:'Complete Guide to Presser Feet: Types, Uses and Compatibility', excerpt:'From zipper feet to walking feet, this complete guide covers every common presser foot type, their uses, and how to ensure compatibility with your sewing machine.', date:'Sep 18, 2024', read:'9 min read' },
+];
+
+let currentFilter = 'all';
+
+// ─── RENDER ───
+function renderProductCard(p) {
+  return `
+  <div class="product-card" onclick="openModal(${p.id})">
+    <div class="card-img">
+      <div class="img-ph">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-2 10l-4-3-1 1.5-3-4-5 6h16l-3-0.5z"/></svg>
+      </div>
+      ${p.badge ? `<div class="card-badge"><span class="tag ${p.badgeColor}">${p.badge.toUpperCase()}</span></div>` : ''}
+    </div>
+    <div class="card-body">
+      <div class="card-cat">${p.cat.toUpperCase()}</div>
+      <div class="card-name">${p.name}</div>
+      <div class="card-desc">${p.desc}</div>
+      <div class="card-moq"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 3h2v2h-2V7zm0 4h2v6h-2v-6zm-4-4h2v2H9V7zm0 4h2v6H9v-6z"/></svg> MOQ: ${p.moq}</div>
+      <div class="card-actions">
+        <button class="btn btn-primary btn-sm" onclick="event.stopPropagation();openModal(${p.id})">View Details</button>
+        <button class="btn btn-outline btn-sm" style="color:var(--blue);border-color:var(--blue)" onclick="event.stopPropagation();openModal(${p.id})">Get Quote</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderBlogCard(b) {
+  return `
+  <div class="blog-card">
+    <div class="blog-img"><div class="bph"><svg viewBox="0 0 24 24" fill="#93c5fd"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></div></div>
+    <div class="blog-body">
+      <div class="blog-cat">${b.cat}</div>
+      <div class="blog-title">${b.title}</div>
+      <div class="blog-excerpt">${b.excerpt}</div>
+      <div class="blog-meta"><span>${b.date}</span><span>${b.read}</span></div>
+    </div>
+  </div>`;
+}
+
+function initGrids() {
+  const fg = document.getElementById('featured-grid');
+  if(fg) fg.innerHTML = products.slice(0,4).map(renderProductCard).join('');
+  const bp = document.getElementById('blog-preview-grid');
+  if(bp) bp.innerHTML = blogPosts.slice(0,3).map(renderBlogCard).join('');
+  renderFullProductGrid(products);
+  const fb = document.getElementById('full-blog-grid');
+  if(fb) fb.innerHTML = blogPosts.map(renderBlogCard).join('');
+}
+
+function renderFullProductGrid(list) {
+  const g = document.getElementById('full-products-grid');
+  if(g) { g.innerHTML = list.map(renderProductCard).join(''); }
+  const rc = document.getElementById('results-count');
+  if(rc) rc.textContent = list.length + ' products found';
+}
+
+function filterCat(cat) {
+  currentFilter = cat;
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.toggle('active', b.dataset.cat === cat));
+  const list = cat === 'all' ? products : products.filter(p => p.cat === cat);
+  renderFullProductGrid(list);
+  if(document.getElementById('page-products') && !document.getElementById('page-products').classList.contains('hidden')) {
+    // already on products page
+  }
+}
+
+function applyFilters() { filterCat(currentFilter); }
+
+// ─── MODAL ───
+function openModal(id) {
+  const p = products.find(x => x.id === id);
+  if(!p) return;
+  document.getElementById('modal-cat').textContent = p.cat.toUpperCase();
+  document.getElementById('modal-name').textContent = p.name;
+  document.getElementById('modal-summary').textContent = p.desc;
+  document.getElementById('modal-moq').textContent = p.moq;
+  document.getElementById('modal-lead').textContent = p.lead;
+  document.getElementById('modal-pkg').textContent = p.pkg;
+  // Thumbs (placeholder)
+  const thumbsEl = document.getElementById('modal-thumbs');
+  thumbsEl.innerHTML = ['Product Image 1','Product Image 2','Product Image 3'].map((t,i) =>
+    `<div class="thumb ${i===0?'active':''}" onclick="selectThumb(this)"><svg viewBox="0 0 24 24" width="30" height="30" fill="#93c5fd"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg></div>`
+  ).join('');
+  // Tabs
+  document.getElementById('tab-desc').innerHTML = `<p style="font-size:.9rem;color:var(--steel);line-height:1.7">${p.desc2}</p>`;
+  document.getElementById('tab-specs').innerHTML = `<table class="spec-table">${p.specs.map(s=>`<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table>`;
+  document.getElementById('tab-apps').innerHTML = `<ul class="app-list">${p.apps.map(a=>`<li>${a}</li>`).join('')}</ul>`;
+  document.getElementById('tab-shipping').innerHTML = `<p style="font-size:.9rem;color:var(--steel);line-height:1.7">${p.shipping}</p>`;
+  document.getElementById('tab-reviews').innerHTML = p.reviews.map(r=>`<div class="review-card"><div class="review-stars">${'★'.repeat(r.stars)}${'☆'.repeat(5-r.stars)}</div><div class="review-text">"${r.text}"</div><div class="review-author">${r.author} <span class="review-country">${r.country}</span></div></div>`).join('');
+  // Reset tabs
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',i===0));
+  document.querySelectorAll('.tab-panel').forEach((p,i)=>p.classList.toggle('active',i===0));
+  document.getElementById('product-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('product-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function selectThumb(el) {
+  document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+}
+function switchTab(btn, tabId) {
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-'+tabId).classList.add('active');
+}
+document.getElementById('product-modal').addEventListener('click', function(e) {
+  if(e.target === this) closeModal();
+});
+
+// ─── PAGES ───
+function showSection(page) {
+  document.getElementById('page-home').classList.toggle('hidden', page !== 'home');
+  document.getElementById('page-products').classList.toggle('hidden', page !== 'products-page');
+  document.getElementById('page-blog').classList.toggle('hidden', page !== 'blog-page');
+  window.scrollTo(0,0);
+  if(page === 'products-page') renderFullProductGrid(currentFilter==='all'?products:products.filter(p=>p.cat===currentFilter));
+}
+function scrollToId(id) {
+  showSection('home');
+  setTimeout(()=>{
+    const el = document.getElementById(id);
+    if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+  }, 50);
+}
+function toggleMobile() {
+  document.getElementById('mobile-menu').classList.toggle('open');
+  document.body.style.overflow = document.getElementById('mobile-menu').classList.contains('open') ? 'hidden' : '';
+}
+
+// ─── FORM ───
+function submitForm() {
+  const name = document.getElementById('form-name').value || 'Not provided';
+  const company = document.getElementById('form-company').value || 'Not provided';
+  const email = document.getElementById('form-email').value || 'Not provided';
+  const phone = document.getElementById('form-phone').value || 'Not provided';
+  const country = document.getElementById('form-country').value || 'Not provided';
+  const category = document.getElementById('form-category').value || 'Not specified';
+  const details = document.getElementById('form-details').value || 'No details provided';
+
+  const message = `🧵 QUOTE REQUEST from PN Engineering Works Website
+
+👤 Name: ${name}
+🏢 Company: ${company}
+📧 Email: ${email}
+📱 Phone/WhatsApp: ${phone}
+🌍 Country: ${country}
+📦 Category: ${category}
+
+📝 Product Details & Quantity:
+${details}
+
+---
+Sent via website form. Please send quote ASAP!`;
+
+  const whatsappUrl = `https://wa.me/919501711739?text=${encodeURIComponent(message)}`;
+  window.open(whatsappUrl, '_blank');
+  
+  // Show success message
+  const successEl = document.getElementById('form-success');
+  successEl.innerHTML = '✅ WhatsApp chat opened with your details pre-filled! 📱';
+  successEl.style.display = 'block';
+  setTimeout(() => { successEl.style.display = 'none'; }, 5000);
+  
+  // Optional: Clear form
+  // document.getElementById('form-name').value = '';
+  // ... etc
+}
+
+// ─── BACK TO TOP ───
+window.addEventListener('scroll', ()=>{
+  document.getElementById('back-top').classList.toggle('visible', window.scrollY > 400);
+});
+
+// ─── INIT ───
+document.addEventListener('DOMContentLoaded', initGrids);
+initGrids();
+</script>
+</body>
+</html>
